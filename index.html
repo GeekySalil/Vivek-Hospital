@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -574,68 +575,76 @@
             <!-- CSS Grid for Departments -->
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <!-- Anaesthesia -->
-                <div class="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center reveal premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm relative overflow-hidden min-h-[200px] flex flex-col justify-center">
-                    <div class="transform group-hover:-translate-y-8 transition-transform duration-500 ease-out z-10 relative">
-                        <i class="fas fa-syringe text-4xl text-primary mb-4 group-hover:text-white transition-colors duration-300"></i>
-                        <h4 class="font-bold text-slate-800 group-hover:text-white transition-colors duration-300">Anaesthesia</h4>
+                <div class="relative h-[200px] bg-slate-50 border border-slate-100 rounded-2xl text-center reveal premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm overflow-hidden">
+                    <!-- Front / Default View -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-100 scale-100 group-hover:opacity-0 group-hover:scale-50">
+                        <i class="fas fa-syringe text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-slate-800">Anaesthesia</h4>
                     </div>
-                    <div class="absolute bottom-6 left-0 w-full px-4 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-10">
-                        <p class="text-[13px] text-emerald-50 font-medium leading-tight">Advanced pain management, life support, and safe surgical anesthesia care.</p>
+                    <!-- Back / Hover View -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-0 scale-150 group-hover:opacity-100 group-hover:scale-100">
+                        <h4 class="font-bold text-white border-b border-emerald-400 pb-2 mb-2 w-full">Anaesthesia</h4>
+                        <p class="text-xs text-emerald-50 leading-relaxed font-medium">Advanced pain management, life support, and safe surgical anesthesia care.</p>
                     </div>
                 </div>
                 
                 <!-- General Medicine -->
-                <div class="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center reveal reveal-delay-1 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm relative overflow-hidden min-h-[200px] flex flex-col justify-center">
-                    <div class="transform group-hover:-translate-y-8 transition-transform duration-500 ease-out z-10 relative">
-                        <i class="fas fa-pills text-4xl text-primary mb-4 group-hover:text-white transition-colors duration-300"></i>
-                        <h4 class="font-bold text-slate-800 group-hover:text-white transition-colors duration-300">General Medicine</h4>
+                <div class="relative h-[200px] bg-slate-50 border border-slate-100 rounded-2xl text-center reveal reveal-delay-1 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm overflow-hidden">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-100 scale-100 group-hover:opacity-0 group-hover:scale-50">
+                        <i class="fas fa-pills text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-slate-800">General Medicine</h4>
                     </div>
-                    <div class="absolute bottom-6 left-0 w-full px-4 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-10">
-                        <p class="text-[13px] text-emerald-50 font-medium leading-tight">Comprehensive care for fevers, diabetes, and chronic medical conditions.</p>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-0 scale-150 group-hover:opacity-100 group-hover:scale-100">
+                        <h4 class="font-bold text-white border-b border-emerald-400 pb-2 mb-2 w-full">General Medicine</h4>
+                        <p class="text-xs text-emerald-50 leading-relaxed font-medium">Comprehensive care for fevers, diabetes, and chronic medical conditions.</p>
                     </div>
                 </div>
                 
                 <!-- Orthopaedics -->
-                <div class="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center reveal reveal-delay-2 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm relative overflow-hidden min-h-[200px] flex flex-col justify-center">
-                    <div class="transform group-hover:-translate-y-8 transition-transform duration-500 ease-out z-10 relative">
-                        <i class="fas fa-bone text-4xl text-primary mb-4 group-hover:text-white transition-colors duration-300"></i>
-                        <h4 class="font-bold text-slate-800 group-hover:text-white transition-colors duration-300">Orthopaedics</h4>
+                <div class="relative h-[200px] bg-slate-50 border border-slate-100 rounded-2xl text-center reveal reveal-delay-2 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm overflow-hidden">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-100 scale-100 group-hover:opacity-0 group-hover:scale-50">
+                        <i class="fas fa-bone text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-slate-800">Orthopaedics</h4>
                     </div>
-                    <div class="absolute bottom-6 left-0 w-full px-4 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-10">
-                        <p class="text-[13px] text-emerald-50 font-medium leading-tight">Expert treatment for fractures, joint issues, trauma, and sports injuries.</p>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-0 scale-150 group-hover:opacity-100 group-hover:scale-100">
+                        <h4 class="font-bold text-white border-b border-emerald-400 pb-2 mb-2 w-full">Orthopaedics</h4>
+                        <p class="text-xs text-emerald-50 leading-relaxed font-medium">Expert treatment for fractures, joint issues, trauma, and sports injuries.</p>
                     </div>
                 </div>
                 
                 <!-- General Surgery -->
-                <div class="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center reveal reveal-delay-3 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm relative overflow-hidden min-h-[200px] flex flex-col justify-center">
-                    <div class="transform group-hover:-translate-y-8 transition-transform duration-500 ease-out z-10 relative">
-                        <i class="fas fa-briefcase-medical text-4xl text-primary mb-4 group-hover:text-white transition-colors duration-300"></i>
-                        <h4 class="font-bold text-slate-800 group-hover:text-white transition-colors duration-300">General Surgery</h4>
+                <div class="relative h-[200px] bg-slate-50 border border-slate-100 rounded-2xl text-center reveal reveal-delay-3 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm overflow-hidden">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-100 scale-100 group-hover:opacity-0 group-hover:scale-50">
+                        <i class="fas fa-scalpel-path text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-slate-800">General Surgery</h4>
                     </div>
-                    <div class="absolute bottom-6 left-0 w-full px-4 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-10">
-                        <p class="text-[13px] text-emerald-50 font-medium leading-tight">State-of-the-art trauma, hernia, appendix, and laparoscopic surgeries.</p>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-0 scale-150 group-hover:opacity-100 group-hover:scale-100">
+                        <h4 class="font-bold text-white border-b border-emerald-400 pb-2 mb-2 w-full">General Surgery</h4>
+                        <p class="text-xs text-emerald-50 leading-relaxed font-medium">State-of-the-art trauma, hernia, appendix, and laparoscopic surgeries.</p>
                     </div>
                 </div>
                 
                 <!-- Obs & Gynae -->
-                <div class="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center reveal premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm relative overflow-hidden min-h-[200px] flex flex-col justify-center">
-                    <div class="transform group-hover:-translate-y-8 transition-transform duration-500 ease-out z-10 relative">
-                        <i class="fas fa-baby text-4xl text-primary mb-4 group-hover:text-white transition-colors duration-300"></i>
-                        <h4 class="font-bold text-slate-800 group-hover:text-white transition-colors duration-300">Obs & Gynae</h4>
+                <div class="relative h-[200px] bg-slate-50 border border-slate-100 rounded-2xl text-center reveal premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm overflow-hidden">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-100 scale-100 group-hover:opacity-0 group-hover:scale-50">
+                        <i class="fas fa-baby text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-slate-800">Obs & Gynae</h4>
                     </div>
-                    <div class="absolute bottom-6 left-0 w-full px-4 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-10">
-                        <p class="text-[13px] text-emerald-50 font-medium leading-tight">Complete maternity care, safe deliveries, and dedicated women's health.</p>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-0 scale-150 group-hover:opacity-100 group-hover:scale-100">
+                        <h4 class="font-bold text-white border-b border-emerald-400 pb-2 mb-2 w-full">Obs & Gynae</h4>
+                        <p class="text-xs text-emerald-50 leading-relaxed font-medium">Complete maternity care, safe deliveries, and dedicated women's health.</p>
                     </div>
                 </div>
                 
                 <!-- Paediatrics -->
-                <div class="bg-slate-50 border border-slate-100 p-4 rounded-2xl text-center reveal reveal-delay-1 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm relative overflow-hidden min-h-[200px] flex flex-col justify-center">
-                    <div class="transform group-hover:-translate-y-8 transition-transform duration-500 ease-out z-10 relative">
-                        <i class="fas fa-child text-4xl text-primary mb-4 group-hover:text-white transition-colors duration-300"></i>
-                        <h4 class="font-bold text-slate-800 group-hover:text-white transition-colors duration-300">Paediatrics</h4>
+                <div class="relative h-[200px] bg-slate-50 border border-slate-100 rounded-2xl text-center reveal reveal-delay-1 premium-hover hover:bg-primary hover:border-primary transition-all duration-500 cursor-pointer group shadow-sm overflow-hidden">
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-100 scale-100 group-hover:opacity-0 group-hover:scale-50">
+                        <i class="fas fa-child text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-slate-800">Paediatrics</h4>
                     </div>
-                    <div class="absolute bottom-6 left-0 w-full px-4 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-10">
-                        <p class="text-[13px] text-emerald-50 font-medium leading-tight">Specialized neonatal care, vaccinations, and expert pediatric treatments.</p>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 transition-all duration-500 ease-in-out opacity-0 scale-150 group-hover:opacity-100 group-hover:scale-100">
+                        <h4 class="font-bold text-white border-b border-emerald-400 pb-2 mb-2 w-full">Paediatrics</h4>
+                        <p class="text-xs text-emerald-50 leading-relaxed font-medium">Specialized neonatal care, vaccinations, and expert pediatric treatments.</p>
                     </div>
                 </div>
             </div>
