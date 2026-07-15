@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon.ico">
-
+<link rel="icon" href="favicon/favicon.ico" sizes="any">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -189,6 +189,51 @@
             opacity: 0.5;
             pointer-events: none;
         }
+        /* ===========================
+   AYUSHMAN BHARAT BANNER
+=========================== */
+
+.ayushman-banner{
+    width:100%;
+    border-radius:24px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+    transition:.4s ease;
+}
+
+.ayushman-banner:hover{
+    transform:translateY(-6px);
+    box-shadow:0 30px 70px rgba(0,0,0,.18);
+}
+
+.ayushman-banner img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .ayushman-banner{
+        border-radius:18px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .ayushman-banner{
+        border-radius:14px;
+        box-shadow:0 12px 35px rgba(0,0,0,.12);
+    }
+
+}
     </style>
 </head>
 <body class="antialiased selection:bg-primary selection:text-white relative">
@@ -273,11 +318,28 @@
 
             </button>
 
+
         </div>
 
     </div>
 
 </nav>
+<div id="mobile-menu"
+     class="hidden fixed font-bold top-20 left-0 w-full bg-white shadow-xl z-40 flex-col">
+
+    <a href="#home" class="px-6 py-4 border-b">Home</a>
+    <a href="#about" class="px-6 py-4 border-b">About</a>
+    <a href="#services" class="px-6 py-4 border-b">Services</a>
+    <a href="#doctors" class="px-6 py-4 border-b">Doctors</a>
+    <a href="#gallery" class="px-6 py-4 border-b">Gallery</a>
+    <a href="#contact" class="px-6 py-4 border-b">Contact</a>
+
+    <a href="tel:8299698165"
+       class="m-4 text-center bg-primary text-white rounded-lg py-3 font-bold">
+        Call Now
+    </a>
+</div>
+
 
     <!-- Hero Section -->
 <section id="home" class="relative pt-20 sm:pt-24 md:pt-28 lg:pt-32 xl:pt-20 pb-16 md:pb-20 overflow-hidden flex items-center min-h-screen bg-slate-950">        <!-- Dark Base & Gradient Overlays -->
@@ -936,6 +998,7 @@
     <!-- Ayushman Bharat Highlight -->
     <section class="py-16 bg-gradient-to-r from-emerald-600 to-teal-800 border-y border-emerald-500 relative overflow-hidden">
         <!-- Background Pattern -->
+         
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         
         <!-- Small Background Ambient Icons -->
@@ -973,6 +1036,7 @@
     </section>
 
     <!-- Government & Insurance Partners -->
+    
     <section id="insurance" class="py-20 bg-white/30 backdrop-blur-sm relative border-b border-white/50 overflow-hidden">
         <!-- Ambient Icons -->
         <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
@@ -986,7 +1050,19 @@
                 <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4">Government & <span class="text-gradient-green">Insurance Cards</span></h2>
                 <p class="text-slate-600 text-lg font-medium">The hospital provides free treatment and surgeries for eligible beneficiaries under various government schemes and top insurance programs.</p>
             </div>
+            <!-- AYUSHMAN BHARAT SECTION -->
+<section class="section-padding" id="ayushman-banner" style="background:#f8fafc;">
+    <div class="container">
 
+        <div class="ayushman-banner">
+            <img
+                src="images/ayush.webp"
+                alt="Ayushman Bharat PM-JAY Cashless Treatment Facility"
+                loading="lazy">
+        </div>
+
+    </div>
+</section>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 reveal reveal-delay-1">
                 <!-- PMJAY -->
                 <div class="glass-panel p-6 rounded-2xl flex items-center space-x-4 premium-hover">
@@ -996,7 +1072,7 @@
                 <!-- Ayushman -->
                 <div class="glass-panel p-6 rounded-2xl flex items-center space-x-4 premium-hover border-emerald-200 bg-emerald-50/50">
                     <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-primary border border-emerald-200 shrink-0 shadow-sm"><i class="fas fa-hands-helping"></i></div>
-                    <h4 class="font-bold text-slate-800 leading-tight">Ayushman<br><span class="text-xs text-slate-500 font-medium">Bharat Card</span></h4>
+                    <h4 class="font-bold text-slate-800 leading-tight">Ayushman Bharat <br><span class="text-xs text-slate-500 font-medium">Card</span></h4>
                 </div>
                 <!-- Star Health -->
                 <div class="glass-panel p-6 rounded-2xl flex items-center space-x-4 premium-hover">
@@ -1018,15 +1094,27 @@
                     <div class="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-500 border border-red-100 shrink-0 shadow-sm"><i class="fas fa-home"></i></div>
                     <h4 class="font-bold text-slate-800 leading-tight">HDFC ERGO<br><span class="text-xs text-slate-500 font-medium">Health Insurance</span></h4>
                 </div>
-                <!-- Vidal Health -->
+                <!-- ICICI-->
                 <div class="glass-panel p-6 rounded-2xl flex items-center space-x-4 premium-hover">
                     <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 border border-teal-100 shrink-0 shadow-sm"><i class="fas fa-heartbeat"></i></div>
-                    <h4 class="font-bold text-slate-800 leading-tight">Vidal Health<br><span class="text-xs text-slate-500 font-medium">Insurance TPA</span></h4>
+                    <h4 class="font-bold text-slate-800 leading-tight">ICICI Lombard<br><span class="text-xs text-slate-500 font-medium">Health Insurance</span></h4>
+                </div>
+                <div class="glass-panel p-6 rounded-2xl flex items-center space-x-4 premium-hover">
+                    <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 border border-teal-100 shrink-0 shadow-sm"><i class="fas fa-shield-heart"></i></div>
+                    <h4 class="font-bold text-slate-800 leading-tight">Sun Rise<br><span class="text-xs text-slate-500 font-medium">Insurance TPA</span></h4>
+                </div>
+                 <div class="glass-panel p-6 rounded-2xl flex items-center space-x-4 premium-hover">
+                    <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 border border-teal-100 shrink-0 shadow-sm"><i class="fas fa-heartbeat"></i></div>
+                    <h4 class="font-bold text-slate-800 leading-tight">Manipal CIGNA<br><span class="text-xs text-slate-500 font-medium">Health Insurance</span></h4>
+                </div>
+                 <div class="glass-panel p-6 rounded-2xl flex items-center space-x-4 premium-hover">
+                    <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 border border-teal-100 shrink-0 shadow-sm"><i class="fas fa-notes-medical"></i></div>
+                    <h4 class="font-bold text-slate-800 leading-tight">SBI <br><span class="text-xs text-slate-500 font-medium">General Insurance</span></h4>
                 </div>
                 <!-- And More Placeholder -->
-                <!-- <div class="glass-panel p-6 rounded-2xl flex items-center justify-center space-x-2 premium-hover bg-slate-50/50 cursor-pointer">
-                    <span class="font-bold text-slate-600">View All Partners</span> <i class="fas fa-arrow-right text-slate-400"></i>
-                </div> -->
+                <div class="glass-panel p-6 rounded-2xl flex items-center space-x-2 premium-hover bg-slate-50/50 cursor-pointer"><i class="fas fa-notes-medical"></i>
+                    <span class="font-bold text-slate-600">& Many More</span> <i class="fas fa-arrow-right text-slate-400"></i>
+                </div>
             </div>
         </div>
     </section>
